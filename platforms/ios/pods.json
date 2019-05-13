@@ -1,0 +1,12 @@
+{
+    "declarations": {},
+    "sources": {},
+    "libraries": {
+        "Branch": {
+            "name": "Branch",
+            "type": "podspec",
+            "spec": "0.25.8",
+            "count": 1
+        }
+    }
+}
