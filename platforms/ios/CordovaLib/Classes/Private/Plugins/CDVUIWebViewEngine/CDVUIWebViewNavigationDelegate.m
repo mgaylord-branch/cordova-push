@@ -101,6 +101,7 @@
 - (BOOL)webView:(UIWebView*)theWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
 {
     NSURL* url = [request URL];
+    NSLog(@"loading request: %@", url);
     CDVViewController* vc = (CDVViewController*)self.enginePlugin.viewController;
 
     /*

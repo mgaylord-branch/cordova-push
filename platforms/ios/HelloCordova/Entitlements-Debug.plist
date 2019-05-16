@@ -7,5 +7,7 @@
       <string>applinks:agjs.test-app.link</string>
       <string>applinks:agjs-alternate.test-app.link</string>
     </array>
+    <key>aps-environment</key>
+    <string>development</string>
   </dict>
 </plist>

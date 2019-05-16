@@ -28,12 +28,40 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 
+#import "BranchNPM.h"
+
+#ifdef BRANCH_NPM
+#import "Branch.h"
+#else
+#import <Branch/Branch.h>
+#endif
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
     self.viewController = [[MainViewController alloc] init];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handlePushNotification:) name:UIApplicationDidBecomeActiveNotification object:nil];
+    
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    NSLog(@"Main AppDelegate didReceiveNotification with fetchCompletionHandler");
+    
+    @try {
+        return [[Branch getInstance] handlePushNotification:userInfo];
+    }
+    @catch (NSException *exception) {
+        [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"BSDKPostUnhandledURL" object:userInfo]];
+    }
+}
+
+- (void) handlePushNotification:(NSNotification*)notification {
+    
+    NSLog(@"%@",@"applicationDidBecomeActive");
+    
 }
 
 @end

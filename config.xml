@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.bytesizecreations.GiphySharer" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.bytesizecreations.GiphySharer" version="1.0.0" 
+    xmlns="http://www.w3.org/ns/widgets" 
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>HelloCordova</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -23,11 +25,12 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-     <plugin name="innomobile-branch-cordova-sdk" spec="^3.1.8-beta.2" />
-  <branch-config>
-    <branch-key value="key_test_kaIi9kyqw8N4nfzQUR8yGdnivvf5KDBx" />
-    <uri-scheme value="giphysharer" />
-    <link-domain value="agjs.test-app.link" />
-    <ios-team-release value="ELFT8X6A4V" />
-  </branch-config>
+    <plugin name="innomobile-branch-cordova-sdk" spec="^3.1.8-beta.2" />
+    <allow-navigation href="http://localhost:8080/*"/>
+    <branch-config>
+        <branch-key value="key_test_kaIi9kyqw8N4nfzQUR8yGdnivvf5KDBx" />
+        <uri-scheme value="giphysharer" />
+        <link-domain value="agjs.test-app.link" />
+        <ios-team-release value="ELFT8X6A4V" />
+    </branch-config>
 </widget>
