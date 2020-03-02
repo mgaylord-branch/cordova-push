@@ -7,10 +7,10 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
+    "branch-cordova-sdk": {
       "PACKAGE_NAME": "com.bytesizecreations.GiphySharer"
     },
-    "innomobile-branch-cordova-sdk": {
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.bytesizecreations.GiphySharer"
     },
     "phonegap-plugin-push": {

@@ -29,11 +29,11 @@ var app = {
     //
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
-    onDeviceReady: function () {
+    onDeviceReady: async function () {
         app.receivedEvent('deviceready');
         console.log('On Device Ready...')
-        app.branchInit();
-        app.setupPush();
+        await app.branchInit();
+        await app.setupPush();
     },
     receivedEvent: function (id) {
         var parentElement = document.getElementById(id);
@@ -49,14 +49,19 @@ var app = {
         app.branchInit();
         app.setupPush();
     },
-    branchInit: function () {
+    branchInit: async function () {
         // Branch initialization
-        Branch.initSession().then(function (data) {
+        try {
+            const data = await Branch.initSession()
             if (data["+clicked_branch_link"]) {
                 // read deep link data on click
                 alert("Deep Link Data: " + JSON.stringify(data));
             }
-        });
+            app.sendEvent()
+        } catch (err) {
+            alert('Error: ' + JSON.stringify(err.message))
+            console.log(`Error sendBranchEvent: ${JSON.stringify(res)}`)
+        }
     },
     setupPush: function () {
         console.log('calling push init');
@@ -96,22 +101,28 @@ var app = {
             app.getLinkData(link);
         });
     },
-    getLinkData: function(link) {
+    getLinkData: function (link) {
         const encoded = encodeURI(link)
         const request = `https://api2.branch.io/v1/url?url=${encoded}&branch_key=key_test_kaIi9kyqw8N4nfzQUR8yGdnivvf5KDBx`;
         $.ajax({
-           type: "GET",
-           dataType: 'json',
-           url: request,
-           success: app.onDataReceived,
-           error: app.onDataError
+            type: "GET",
+            dataType: 'json',
+            url: request,
+            success: app.onDataReceived,
+            error: app.onDataError
         });
     },
-    onDataReceived: function(data) {
+    onDataReceived: function (data) {
         alert(JSON.stringify(data))
     },
-    onDataError: function(e) {
+    onDataError: function (e) {
         console.error(`Error fetching link data: ${e.message}`)
+    },
+    sendEvent: function() {
+        const eventName = 'clicked_on_this'
+        const metadata = { 'custom_dictionary': 123, 'anything': 'everything' }
+        console.log('Sending event...')
+        Branch.sendBranchEvent(eventName, metadata);
     },
     displayElement: function (selector) {
         const parentElement = document.getElementById('deviceready');

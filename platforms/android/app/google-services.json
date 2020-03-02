@@ -1,78 +1,35 @@
 {
   "project_info": {
-    "project_number": "775453245135",
-    "firebase_url": "https://giphysharerswift.firebaseio.com",
-    "project_id": "giphysharerswift",
-    "storage_bucket": "giphysharerswift.appspot.com"
+    "project_number": "906695895211",
+    "firebase_url": "https://hellocordova-f9f91.firebaseio.com",
+    "project_id": "hellocordova-f9f91",
+    "storage_bucket": "hellocordova-f9f91.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:775453245135:android:502c67f93d361894",
+        "mobilesdk_app_id": "1:906695895211:android:502c67f93d361894",
         "android_client_info": {
           "package_name": "com.bytesizecreations.GiphySharer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "775453245135-facaff0015bh6g7437d5m07497098ka7.apps.googleusercontent.com",
+          "client_id": "906695895211-rl8hq7ros8sn5qihi9kgk5rfht8iffnq.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCuLzz3xpQnKXfZfEDIYvXTFFzUrhl07YA"
+          "current_key": "AIzaSyCtpjTMASHn_s9d62cDhuTmvB9gIQs393Y"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "775453245135-facaff0015bh6g7437d5m07497098ka7.apps.googleusercontent.com",
+              "client_id": "906695895211-rl8hq7ros8sn5qihi9kgk5rfht8iffnq.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "775453245135-2ndc9dupnhpabtfdqs7uoqunjuqu2nnv.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.bytesizecreations.GiphySharer"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:775453245135:android:2d4ee68d2ea6c388",
-        "android_client_info": {
-          "package_name": "com.bytesizecreations.giphysharer"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "775453245135-facaff0015bh6g7437d5m07497098ka7.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCuLzz3xpQnKXfZfEDIYvXTFFzUrhl07YA"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "775453245135-facaff0015bh6g7437d5m07497098ka7.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "775453245135-2ndc9dupnhpabtfdqs7uoqunjuqu2nnv.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.bytesizecreations.GiphySharer"
-              }
             }
           ]
         }

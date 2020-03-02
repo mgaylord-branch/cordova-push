@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.bytesizecreations.GiphySharer" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="BranchSDK">
+        <param name="android-package" value="io.branch.BranchSDK" />
+        <param name="onload" value="true" />
+    </feature>
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
     <feature name="PushNotification">
         <param name="android-package" value="com.adobe.phonegap.push.PushPlugin" />
-    </feature>
-    <feature name="BranchSDK">
-        <param name="android-package" value="io.branch.BranchSDK" />
-        <param name="onload" value="true" />
     </feature>
     <name>HelloCordova</name>
     <description>
@@ -28,11 +28,12 @@
     <allow-intent href="geo:*" />
     <allow-navigation href="http://localhost:8080/*" />
     <branch-config>
-        <branch-key value="key_test_kaIi9kyqw8N4nfzQUR8yGdnivvf5KDBx" />
+        <branch-key value="key_live_gpQjWaEAt2OYhaCRUV6vvjeeArkYPErm" />
         <uri-scheme value="giphysharer" />
-        <link-domain value="agjs.test-app.link" />
+        <link-domain value="agjs.app.link" />
         <ios-team-release value="ELFT8X6A4V" />
     </branch-config>
+    <resource-file src="google-services.json" target="google-services.json" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
 </widget>

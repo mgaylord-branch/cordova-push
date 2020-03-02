@@ -6,7 +6,7 @@
   <uses-permission android:name="android.permission.WAKE_LOCK"/>
   <uses-permission android:name="android.permission.VIBRATE"/>
   <application android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:supportsRtl="true">
-    <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/activity_name" android:launchMode="singleTask" android:name="MainActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" android:windowSoftInputMode="adjustResize">
+    <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode" android:label="@string/activity_name" android:launchMode="singleTask" android:name="MainActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" android:windowSoftInputMode="adjustResize">
       <intent-filter android:label="@string/launcher_name">
         <action android:name="android.intent.action.MAIN"/>
         <category android:name="android.intent.category.LAUNCHER"/>
@@ -21,20 +21,13 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:host="agjs.test-app.link" android:scheme="https"/>
-        <data android:host="agjs-alternate.test-app.link" android:scheme="https"/>
+        <data android:host="agjs.app.link" android:scheme="https"/>
+        <data android:host="agjs-alternate.app.link" android:scheme="https"/>
       </intent-filter>
     </activity>
     <activity android:exported="true" android:name="com.adobe.phonegap.push.PushHandlerActivity" android:permission="${applicationId}.permission.PushHandlerActivity"/>
-    <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_test_kaIi9kyqw8N4nfzQUR8yGdnivvf5KDBx"/>
-    <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
     <receiver android:name="com.adobe.phonegap.push.BackgroundActionButtonHandler"/>
     <receiver android:name="com.adobe.phonegap.push.PushDismissedHandler"/>
-    <receiver android:name="io.branch.referral.InstallListener" android:exported="true">
-      <intent-filter>
-        <action android:name="com.android.vending.INSTALL_REFERRER"/>
-      </intent-filter>
-    </receiver>
     <service android:name="com.adobe.phonegap.push.FCMService">
       <intent-filter>
         <action android:name="com.google.firebase.MESSAGING_EVENT"/>
@@ -45,6 +38,7 @@
         <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
       </intent-filter>
     </service>
+    <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_gpQjWaEAt2OYhaCRUV6vvjeeArkYPErm"/>
+    <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
   </application>
-  <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="25"/>
 </manifest>

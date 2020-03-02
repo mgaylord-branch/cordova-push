@@ -14,12 +14,12 @@
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		5CA932D66AB64788ABCA17E8 /* HelloCordova.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = BC501F1C2D644B5F96C1FDB6 /* HelloCordova.entitlements */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		A22A0E5F8B0847EC93436BDA /* AppDelegate+BranchSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = B86089FA23B240D7ADCD74B7 /* AppDelegate+BranchSdk.m */; };
-		A4B962C9437E4CFCABA70C7C /* BranchSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFC38994AF4FDB949367A4 /* BranchSDK.m */; };
 		E5B397E5D9077772C6E1092A /* libPods-HelloCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E41F496BD3494A60335A7E49 /* libPods-HelloCordova.a */; };
 		3D561BB99440417D9AE0B191 /* AppDelegate+notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E86184177694EFCB3D4DF17 /* AppDelegate+notification.m */; };
 		D6565D97086446C3B6D4FF99 /* PushPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7466BF6CB646D08B28094B /* PushPlugin.m */; };
 		07134017ADD54DA28E1FA6DF /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D9E6F9B8FB4C7F97536F71 /* PushKit.framework */; };
+		A3774980F8044A2AA68D73FB /* BranchSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 753DE777FEE742DBAEB60948 /* BranchSDK.m */; };
+		412725C2BF7A49D085DDB04A /* AppDelegate+BranchSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2F42D250714C209FE67C86 /* AppDelegate+BranchSdk.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,6 @@
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* HelloCordova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCordova.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FCFC38994AF4FDB949367A4 /* BranchSDK.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = BranchSDK.m; path = "innomobile-branch-cordova-sdk/BranchSDK.m"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
@@ -64,9 +63,7 @@
 		32CA4F630368D1EE00C91783 /* HelloCordova-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloCordova-Prefix.pch"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = HelloCordova/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* HelloCordova-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HelloCordova-Info.plist"; path = "HelloCordova/HelloCordova-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
-		B86089FA23B240D7ADCD74B7 /* AppDelegate+BranchSdk.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+BranchSdk.m"; path = "innomobile-branch-cordova-sdk/AppDelegate+BranchSdk.m"; sourceTree = "<group>"; };
 		BC501F1C2D644B5F96C1FDB6 /* HelloCordova.entitlements */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = HelloCordova.entitlements; sourceTree = "<group>"; };
-		CE5373F355B1484BB2B64F42 /* BranchNPM.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = BranchNPM.h; path = "innomobile-branch-cordova-sdk/BranchNPM.h"; sourceTree = "<group>"; };
 		CF46D518DAA2C9C14486B99D /* Pods-HelloCordova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCordova.release.xcconfig"; path = "Target Support Files/Pods-HelloCordova/Pods-HelloCordova.release.xcconfig"; sourceTree = "<group>"; };
 		E41F496BD3494A60335A7E49 /* libPods-HelloCordova.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloCordova.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5FEA315D738C32D079C534D /* Pods-HelloCordova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCordova.debug.xcconfig"; path = "Target Support Files/Pods-HelloCordova/Pods-HelloCordova.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,12 +71,15 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = HelloCordova/config.xml; sourceTree = "<group>"; };
-		FE9C84DF77AD42C7B66D1AFF /* BranchSDK.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = BranchSDK.h; path = "innomobile-branch-cordova-sdk/BranchSDK.h"; sourceTree = "<group>"; };
 		2E86184177694EFCB3D4DF17 /* AppDelegate+notification.m */ = {isa = PBXFileReference; name = "AppDelegate+notification.m"; path = "phonegap-plugin-push/AppDelegate+notification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		0F7466BF6CB646D08B28094B /* PushPlugin.m */ = {isa = PBXFileReference; name = "PushPlugin.m"; path = "phonegap-plugin-push/PushPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		987BE4E97FC54696AD486581 /* AppDelegate+notification.h */ = {isa = PBXFileReference; name = "AppDelegate+notification.h"; path = "phonegap-plugin-push/AppDelegate+notification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		84C93E239B2E4B30A51EB080 /* PushPlugin.h */ = {isa = PBXFileReference; name = "PushPlugin.h"; path = "phonegap-plugin-push/PushPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		86D9E6F9B8FB4C7F97536F71 /* PushKit.framework */ = {isa = PBXFileReference; name = "PushKit.framework"; path = "System/Library/Frameworks/PushKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		753DE777FEE742DBAEB60948 /* BranchSDK.m */ = {isa = PBXFileReference; name = "BranchSDK.m"; path = "branch-cordova-sdk/BranchSDK.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		1B2F42D250714C209FE67C86 /* AppDelegate+BranchSdk.m */ = {isa = PBXFileReference; name = "AppDelegate+BranchSdk.m"; path = "branch-cordova-sdk/AppDelegate+BranchSdk.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9CDD0D22FC374CF9B8BBE17D /* BranchNPM.h */ = {isa = PBXFileReference; name = "BranchNPM.h"; path = "branch-cordova-sdk/BranchNPM.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1CA98842101B4109A66AA7CB /* BranchSDK.h */ = {isa = PBXFileReference; name = "BranchSDK.h"; path = "branch-cordova-sdk/BranchSDK.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,14 +190,14 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				1FCFC38994AF4FDB949367A4 /* BranchSDK.m */,
-				B86089FA23B240D7ADCD74B7 /* AppDelegate+BranchSdk.m */,
-				CE5373F355B1484BB2B64F42 /* BranchNPM.h */,
-				FE9C84DF77AD42C7B66D1AFF /* BranchSDK.h */,
 				2E86184177694EFCB3D4DF17 /* AppDelegate+notification.m */,
 				0F7466BF6CB646D08B28094B /* PushPlugin.m */,
 				987BE4E97FC54696AD486581 /* AppDelegate+notification.h */,
 				84C93E239B2E4B30A51EB080 /* PushPlugin.h */,
+				753DE777FEE742DBAEB60948 /* BranchSDK.m */,
+				1B2F42D250714C209FE67C86 /* AppDelegate+BranchSdk.m */,
+				9CDD0D22FC374CF9B8BBE17D /* BranchNPM.h */,
+				1CA98842101B4109A66AA7CB /* BranchSDK.h */,
 			);
 			name = Plugins;
 			path = HelloCordova/Plugins;
@@ -366,10 +366,10 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				A4B962C9437E4CFCABA70C7C /* BranchSDK.m in Sources */,
-				A22A0E5F8B0847EC93436BDA /* AppDelegate+BranchSdk.m in Sources */,
 				3D561BB99440417D9AE0B191 /* AppDelegate+notification.m in Sources */,
 				D6565D97086446C3B6D4FF99 /* PushPlugin.m in Sources */,
+				A3774980F8044A2AA68D73FB /* BranchSDK.m in Sources */,
+				412725C2BF7A49D085DDB04A /* AppDelegate+BranchSdk.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

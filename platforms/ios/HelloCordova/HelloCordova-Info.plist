@@ -68,9 +68,9 @@
 		</dict>
 	</array>
 	<key>branch_key</key>
-	<string>key_test_kaIi9kyqw8N4nfzQUR8yGdnivvf5KDBx</string>
+	<string>key_live_gpQjWaEAt2OYhaCRUV6vvjeeArkYPErm</string>
 	<key>branch_app_domain</key>
-	<string>agjs.test-app.link</string>
+	<string>agjs.app.link</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>

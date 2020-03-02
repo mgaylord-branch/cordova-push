@@ -25,12 +25,13 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <plugin name="innomobile-branch-cordova-sdk" spec="^3.1.8-beta.2" />
+    <plugin name="branch-cordova-sdk" spec="^4.0.0" />
     <allow-navigation href="http://localhost:8080/*"/>
     <branch-config>
-        <branch-key value="key_test_kaIi9kyqw8N4nfzQUR8yGdnivvf5KDBx" />
+        <branch-key value="key_live_gpQjWaEAt2OYhaCRUV6vvjeeArkYPErm" />
         <uri-scheme value="giphysharer" />
-        <link-domain value="agjs.test-app.link" />
+        <link-domain value="agjs.app.link" />
         <ios-team-release value="ELFT8X6A4V" />
     </branch-config>
+    <resource-file src="google-services.json" target="google-services.json" />
 </widget>

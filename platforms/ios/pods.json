@@ -1,17 +1,21 @@
 {
     "declarations": {},
-    "sources": {},
-    "libraries": {
-        "Branch": {
-            "name": "Branch",
-            "type": "podspec",
-            "spec": "0.25.8",
+    "sources": {
+        "https://github.com/CocoaPods/Specs.git": {
+            "source": "https://github.com/CocoaPods/Specs.git",
             "count": 1
-        },
+        }
+    },
+    "libraries": {
         "FirebaseMessaging": {
             "name": "FirebaseMessaging",
             "type": "podspec",
             "spec": "~> 2.0.0",
+            "count": 1
+        },
+        "Branch": {
+            "name": "Branch",
+            "spec": "~> 0.31.3",
             "count": 1
         }
     }

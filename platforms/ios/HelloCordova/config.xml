@@ -19,12 +19,12 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="PushNotification">
+        <param name="ios-package" value="PushPlugin" />
+    </feature>
     <feature name="BranchSDK">
         <param name="ios-package" value="BranchSDK" />
         <param name="onload" value="true" />
-    </feature>
-    <feature name="PushNotification">
-        <param name="ios-package" value="PushPlugin" />
     </feature>
     <name>HelloCordova</name>
     <description>
@@ -43,11 +43,12 @@
     <allow-intent href="geo:*" />
     <allow-navigation href="http://localhost:8080/*" />
     <branch-config>
-        <branch-key value="key_test_kaIi9kyqw8N4nfzQUR8yGdnivvf5KDBx" />
+        <branch-key value="key_live_gpQjWaEAt2OYhaCRUV6vvjeeArkYPErm" />
         <uri-scheme value="giphysharer" />
-        <link-domain value="agjs.test-app.link" />
+        <link-domain value="agjs.app.link" />
         <ios-team-release value="ELFT8X6A4V" />
     </branch-config>
+    <resource-file src="google-services.json" target="google-services.json" />
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <preference name="AllowInlineMediaPlayback" value="false" />

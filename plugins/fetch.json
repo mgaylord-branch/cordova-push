@@ -7,14 +7,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "innomobile-branch-cordova-sdk": {
-    "source": {
-      "type": "registry",
-      "id": "innomobile-branch-cordova-sdk@^3.1.8-beta.2"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "phonegap-plugin-push": {
     "source": {
       "type": "registry",
@@ -40,6 +32,14 @@
       "id": "phonegap-plugin-multidex@~1.0.0"
     },
     "is_top_level": false,
+    "variables": {}
+  },
+  "branch-cordova-sdk": {
+    "source": {
+      "type": "registry",
+      "id": "branch-cordova-sdk@^4.0.0"
+    },
+    "is_top_level": true,
     "variables": {}
   }
 }
